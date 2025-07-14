@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+<<<<<<< HEAD
+  }
+}
+
+/* Custom scrollbar */
+=======
+    background: radial-gradient(ellipse at center, #0a0a2a 0%, #000010 50%, #000000 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    color: #00eaff;
+    overflow-x: hidden;
+  }
+
+  /* Cosmic text effects */
+  .cosmic-text {
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff44, 0 0 24px #00eaff22;
+  }
+
+  .nebula-text {
+    background: linear-gradient(135deg, #ff6b9d, #c44569, #00eaff, #4ecdc4);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: nebula-shift 8s ease-in-out infinite;
+  }
+
+  .cosmic-glow {
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.3), 0 0 40px rgba(0, 234, 255, 0.1);
+  }
+
+  .cosmic-border {
+    border: 1px solid rgba(0, 234, 255, 0.3);
+    box-shadow: inset 0 0 10px rgba(0, 234, 255, 0.1);
+  }
+
+  /* Nebula animation */
+  @keyframes nebula-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Cosmic pulse animation */
+  @keyframes cosmic-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px rgba(0, 234, 255, 0.3), 0 0 40px rgba(0, 234, 255, 0.1);
+    }
+    50% { 
+      box-shadow: 0 0 30px rgba(0, 234, 255, 0.5), 0 0 60px rgba(0, 234, 255, 0.2);
+    }
+  }
+
+  .cosmic-pulse {
+    animation: cosmic-pulse 3s ease-in-out infinite;
+  }
+
+  /* Stellar background patterns */
+  .stellar-bg {
+    background: 
+      radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+      radial-gradient(2px 2px at 160px 30px, #ddd, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: stellar-drift 20s linear infinite;
+  }
+
+  @keyframes stellar-drift {
+    from { transform: translateX(0); }
+    to { transform: translateX(-200px); }
+  }
+
+  /* Cosmic glass effect */
+  .cosmic-glass {
+    background: rgba(10, 10, 42, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 234, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Aurora effect */
+  .aurora-bg {
+    background: linear-gradient(45deg, 
+      rgba(0, 234, 255, 0.1) 0%, 
+      rgba(78, 205, 196, 0.1) 25%, 
+      rgba(255, 107, 157, 0.1) 50%, 
+      rgba(196, 69, 105, 0.1) 75%, 
+      rgba(0, 234, 255, 0.1) 100%);
+    background-size: 400% 400%;
+    animation: aurora-shift 10s ease-in-out infinite;
+  }
+
+  @keyframes aurora-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+/* Enhanced scrollbar */
+>>>>>>> 80b276d (v1)
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+<<<<<<< HEAD
+  background: theme('colors.gray.100');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.gray.400');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.gray.500');
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: theme('colors.gray.800');
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: theme('colors.gray.600');
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.gray.500');
+=======
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #1a0a2a, #2a0a2a, #00eaff);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2a0a2a, #3a0a3a, #00eaff);
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.5);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(0, 234, 255, 0.3);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(0, 234, 255, 0.3);
+  color: #fff;
+}
+
+@keyframes spin-slow {
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+/* Neon button base */
+.neon-btn {
+  @apply relative inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-white;
+  box-shadow: 0 0 12px #00eaff99, 0 0 32px #00eaff22;
+  border: 2px solid transparent;
+}
+.neon-btn:hover, .neon-btn:focus {
+  @apply scale-105;
+  background: linear-gradient(90deg, #00eaff 0%, #ff00cc 100%);
+  box-shadow: 0 0 24px #00eaffcc, 0 0 48px #ff00cc55;
+  border-color: #00eaff;
+  outline: none;
+}
+.neon-btn:active {
+  @apply scale-95;
+  box-shadow: 0 0 16px #00eaffcc, 0 0 32px #ff00cc55;
+}
+
+/* Neon border for outlined buttons */
+.neon-outline {
+  @apply border-2 border-cyan-400 text-cyan-400 bg-transparent;
+  box-shadow: 0 0 8px #00eaff99;
+  transition: all 0.2s;
+}
+.neon-outline:hover, .neon-outline:focus {
+  @apply bg-cyan-400 text-white;
+  box-shadow: 0 0 24px #00eaffcc, 0 0 48px #ff00cc55;
+  border-color: #ff00cc;
+}
+
+/* Neon nav button */
+.neon-nav {
+  @apply transition-all duration-200 font-medium rounded-lg px-4 py-3 flex items-center gap-3;
+  background: linear-gradient(90deg, #00eaff22 0%, #ff00cc22 100%);
+  border: 1.5px solid transparent;
+}
+.neon-nav:hover, .neon-nav:focus {
+  background: linear-gradient(90deg, #00eaff 0%, #ff00cc 100%);
+  color: #fff;
+  border-color: #00eaff;
+  box-shadow: 0 0 16px #00eaff99, 0 0 32px #ff00cc55;
+>>>>>>> 80b276d (v1)
+}
