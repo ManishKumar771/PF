@@ -30,19 +30,11 @@ export const Blog: React.FC = () => {
   ];
 
   return (
-<<<<<<< HEAD
-    <section className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Blog & Knowledge</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-=======
     <section className="py-20 bg-[#10101a]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-cyan-400 neon-text mb-4">Blog & Knowledge</h2>
           <p className="text-xl text-cyan-200 max-w-2xl mx-auto">
->>>>>>> 80b276d (v1)
             Sharing insights, learnings, and perspectives on AI, development, and technology trends.
           </p>
         </div>
@@ -51,11 +43,7 @@ export const Blog: React.FC = () => {
           {blogPosts.map((post, index) => (
             <article
               key={index}
-<<<<<<< HEAD
-              className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200"
-=======
               className="bg-[#181824] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200"
->>>>>>> 80b276d (v1)
             >
               <div className={`h-48 bg-gradient-to-br ${post.gradient} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
@@ -67,19 +55,6 @@ export const Blog: React.FC = () => {
                   </span>
                 </div>
               </div>
-<<<<<<< HEAD
-              
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
-                  {post.title}
-                </h3>
-                
-                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  {post.excerpt}
-                </p>
-                
-                <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4">
-=======
 
               <div className="p-6">
                 <h3 className="text-xl font-bold text-cyan-400 mb-3 hover:text-cyan-300 transition-colors duration-200">
@@ -91,7 +66,6 @@ export const Blog: React.FC = () => {
                 </p>
 
                 <div className="flex items-center justify-between text-sm text-cyan-300 mb-4">
->>>>>>> 80b276d (v1)
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
@@ -103,13 +77,8 @@ export const Blog: React.FC = () => {
                     </div>
                   </div>
                 </div>
-<<<<<<< HEAD
-                
-                <button className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200 font-medium">
-=======
 
                 <button className="flex items-center gap-2 text-cyan-400 hover:text-cyan-200 transition-colors duration-200 font-medium">
->>>>>>> 80b276d (v1)
                   <span>Read More</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -119,11 +88,7 @@ export const Blog: React.FC = () => {
         </div>
 
         <div className="text-center">
-<<<<<<< HEAD
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-all duration-200 shadow-lg font-medium">
-=======
           <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-lg hover:from-cyan-500 hover:to-blue-600 transition-all duration-200 shadow-lg font-medium">
->>>>>>> 80b276d (v1)
             View All Posts
           </button>
         </div>
